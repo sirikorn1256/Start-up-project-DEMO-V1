@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OMG.MATCHA</title>
+ <link rel="shortcut icon" href="icon omg.png" type="image/x-icon">
+  <link rel="stylesheet" href="styless.css"/>
+
+  <style>
+    body.about-page { background:#f1fff4; }
+    .about-wrap { width: 92%; max-width: 1200px; margin: 28px auto 60px; }
+    .about-topbar {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .about-title {
+      font-weight: 800;
+      color: #3A5A40;
+      letter-spacing: .5px;
+      font-size: 2.2rem;
+    }
+   
+    .about-search {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .about-search .search-box {
+      width: 100%;
+      max-width: 820px;      
+      background: #fff;
+      border-radius: 6px;
+    }
+    .about-search input { width: 100%; }
+    .about-search button { display: grid; place-items: center; }
+
+
+    .members-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 26px;
+    }
+    @media (max-width: 1100px) {
+      .members-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    }
+    @media (max-width: 860px) {
+      .about-topbar { grid-template-columns: 1fr; }
+      .members-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .about-title { margin-bottom: 6px; }
+    }
+    @media (max-width: 520px) {
+      .members-grid { grid-template-columns: 1fr; }
+    }
+
+  
+    .member-card {
+      border: 1px solid #dbe7d7;
+      box-shadow: 0 6px 10px rgba(0,0,0,.06);
+      padding-top: 24px;
+    }
+    .card-image {
+      width: 120px; height: 120px;
+    }
+    .add-friend-btn {
+      width: 34px; height: 34px; font-size: 0.95rem;
+      top: -6px; right: -6px;
+      border-width: 3px;
+      background: #5f8e5c;
+    }
+    .card-body .member-name { color:#2e5c39; }
+    .member-details p { color:#3d4a3f; }
+  </style>
+</head>
+<body class="about-page">
+
+
+  <nav class="navbar">
+    <div class="logo">OMG.MATCHA</div>
+
+    <input type="checkbox" id="menu-toggle"/>
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a class="active" href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="about-wrap">
+ 
+    <div class="about-topbar">
+      <h1 class="about-title">OMG MATCHA</h1>
+
+      <div class="about-search">
+        <div class="search-box" role="search">
+          <input id="memberSearch" type="text" placeholder="Search Members..." aria-label="Search Members"/>
+          <button id="searchBtn" aria-label="Search">🔎</button>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="members-grid" id="membersGrid">
+
+     
+      <article class="member-card" data-name="เจษฎากร ยศทิพย์บุญย์ jedsadakorn">
+        <div class="card-image">
+          <img src="phoom.jpg" alt="โปรไฟล์ เจษฎากร"/>
+          <button class="add-friend-btn" title="Add friend">+</button>
+        </div>
+        <div class="card-body">
+          <h3 class="member-name">เจษฎากร ยศทิพย์บุญย์</h3>
+          <div class="member-details">
+            <p><strong>ชื่อ–นามสกุล:</strong> เจษฎากร ยศทิพย์บุญย์</p>
+            <p><strong>เลขนักศึกษา:</strong> 6752101060</p>
+            <p><strong>Email:</strong> punnaphatsorn.1986@gmail.com</p>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="member-card" data-name="สิริกร เนียมชมภู sirikon">
+        <div class="card-image">
+          <img src="korn.jpg" alt="โปรไฟล์ สิริกร"/>
+          <button class="add-friend-btn" title="Add friend">+</button>
+        </div>
+        <div class="card-body">
+          <h3 class="member-name">สิริกร เนียมชมภู</h3>
+          <div class="member-details">
+            <p><strong>ชื่อ–นามสกุล:</strong> สิริกร เนียมชมภู</p>
+            <p><strong>เลขนักศึกษา:</strong> 6752101061</p>
+            <p><strong>Email:</strong> o4948840@gmail.com</p>
+          </div>
+        </div>
+      </article>
+
+    
+      <article class="member-card" data-name="ปภังกร คะชนนท์ papangkorn">
+        <div class="card-image">
+          <img src="kla.jpg" alt="โปรไฟล์ ปภังกร"/>
+          <button class="add-friend-btn" title="Add friend">+</button>
+        </div>
+        <div class="card-body">
+          <h3 class="member-name">ปภังกร คะชนนท์</h3>
+          <div class="member-details">
+            <p><strong>ชื่อ–นามสกุล:</strong> ปภังกร คะชนนท์</p>
+            <p><strong>เลขนักศึกษา:</strong> 6752100136</p>
+            <p><strong>Email:</strong> papangkorn861@gmail.com</p>
+          </div>
+        </div>
+      </article>
+
+ 
+      <article class="member-card" data-name="บราลี สะวะริ bralee palm">
+        <div class="card-image">
+          <img src="palm.jpg" alt="โปรไฟล์ บราลี"/>
+          <button class="add-friend-btn" title="Add friend">+</button>
+        </div>
+        <div class="card-body">
+          <h3 class="member-name">บราลี สะวะริ</h3>
+          <div class="member-details">
+            <p><strong>ชื่อ–นามสกุล:</strong> บราลี สะวะริ</p>
+            <p><strong>เลขนักศึกษา:</strong> 6752100926</p>
+            <p><strong>Email:</strong> Palmbralee2811@gmail.com</p>
+          </div>
+        </div>
+      </article>
+
+    
+      <article class="member-card" data-name="นพกร รอบคอบ nopakhon">
+        <div class="card-image">
+          <img src="gy.jpg" alt="โปรไฟล์ นพกร"/>
+          <button class="add-friend-btn" title="Add friend">+</button>
+        </div>
+        <div class="card-body">
+          <h3 class="member-name">นพกร รอบคอบ</h3>
+          <div class="member-details">
+            <p><strong>ชื่อ–นามสกุล:</strong> นพกร รอบคอบ</p>
+            <p><strong>เลขนักศึกษา:</strong> 6752101078</p>
+            <p><strong>Email:</strong> ponebphakorn342@gmail.com</p>
+          </div>
+        </div>
+      </article>
+
+    
+    </div>
+  </section>
+
+
+  <script>
+    const searchInput = document.getElementById('memberSearch');
+    const grid = document.getElementById('membersGrid');
+    const cards = Array.from(grid.querySelectorAll('.member-card'));
+
+    function filterMembers() {
+      const q = (searchInput.value || '').toLowerCase().trim();
+      cards.forEach(card => {
+        const name = (card.dataset.name || card.querySelector('.member-name')?.textContent || '').toLowerCase();
+        card.style.display = name.includes(q) ? '' : 'none';
+      });
+    }
+    searchInput.addEventListener('input', filterMembers);
+    document.getElementById('searchBtn').addEventListener('click', filterMembers);
+  </script>
+</body>
+</html>

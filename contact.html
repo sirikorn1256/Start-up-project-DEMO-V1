@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OMG.MATCHA</title>
+  <link rel="stylesheet" href="styless.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<link rel="shortcut icon" href="icon omg.png" type="image/x-icon">
+</head>
+<body class="contact-page">
+
+   <nav class="navbar">
+      <div class="logo">OMG.MATCHA</div>
+  
+      <input type="checkbox" id="menu-toggle"/>
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a class="active" href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  <main class="container">
+    <section class="contact-box">
+      <aside class="panel-left">
+        <h1 class="contact-title">
+          <span>CONTACT</span><br>
+          <span>US</span>
+          <i class="underline"></i>
+        </h1>
+        <ul class="contact-items">
+          <li><span class="icon">✆</span><div><div class="item-title">Phone</div><div class="item-text">+66 99 999 9999</div></div></li>
+          <li><span class="icon">🖂</span><div><div class="item-title">Email</div><div class="item-text">papangkorn861@gmail.com</div></div></li>
+          <li><span class="icon">⟟</span><div><div class="item-title">Location</div><div class="item-text">Nonthaburi, Thailand 11120</div></div></li>
+        </ul>
+      </aside>
+
+      <section class="panel-right">
+        <form action="https://formsubmit.co/papangkorn861@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Contact Message from OMG.MATCHA">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+          <p class="note">Your message will be sent directly to papangkorn861@gmail.com.</p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+</body>
+</html>
